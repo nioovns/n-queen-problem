@@ -9,7 +9,6 @@ class CSP:
     def _setup(self):
         cols = range(self.n)
         self.problem.addVariables(cols, range(self.n))
-
         self.problem.addConstraint(AllDifferentConstraint())
 
         for col1 in cols:

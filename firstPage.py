@@ -2,6 +2,8 @@ import tkinter as tk
 from tkinter import messagebox
 from csp import CSP
 from ChessBoard import ChessBoard
+from backtracking import Backtracking
+
 
 class App(tk.Tk):
     
@@ -39,7 +41,8 @@ class App(tk.Tk):
             return 
 
         if algo == "backtrack":
-            solution = backtracking(n)
+            solver = Backtracking(n)
+            solution = solver.solve()
             if solution[0] == -1:
                 messagebox.showinfo("Result", f"No solution for N={n}")
             else:
