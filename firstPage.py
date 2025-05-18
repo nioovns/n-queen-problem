@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
+from csp import CSP
+from ChessBoard import ChessBoard
 
 class App(tk.Tk):
     
@@ -53,7 +55,8 @@ class App(tk.Tk):
                 
                 
         else:  
-            solution = CSP(n)
+            solver = CSP(n)
+            solution = solver.solve()
             if solution[0] == -1:
                 messagebox.showinfo("Result", f"No solution for N={n}")
             else:

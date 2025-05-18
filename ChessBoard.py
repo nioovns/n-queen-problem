@@ -33,11 +33,13 @@ class ChessBoard:
     def draw_board(self, queens):
         board = np.add.outer(range(self.n), range(self.n)) % 2
         plt.imshow(board, cmap="binary_r")
+        fontSize = 300 // self.n
 
-        # drawing queens with red dots
+        # drawing queens
         for row, col in enumerate(queens):
-            # plt.plot(col - 1 , row, 'ro', markersize=20) 
-            plt.text(col - 1.28, row + 0.25, u'\u265B', fontsize=40, color='red', zorder=10)
+            # plt.text(col - 1.28, row + 0.25, u'\u265B', fontsize=fontSize, color='red', zorder=10)
+            plt.text(col - 1, row + 0.1, u'\u265B', fontsize=fontSize, color='red', ha='center', va='center')
+
         plt.xticks([])
         plt.yticks([])
         plt.title(f"{self.n}-Queens Solution")
