@@ -9,7 +9,7 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("N-Queens Solver")
-        self.geometry("500x400")
+        self.geometry("500x450")
         self.configure(bg="white")
 
         self.alg_var = tk.StringVar(value="genetic")

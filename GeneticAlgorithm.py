@@ -66,14 +66,7 @@ def genetic_algorithm(n):
     for generation in range(Max_generation):
         population.sort(key=lambda c: c.fitness)
 
-        if generation % 100 == 0:
-            print(f"Generation {generation}: Best fitness = {population[0].fitness}")
-
         if population[0].fitness == 0:
-            print("\nSolution Found!")
-            print(f"Generation: {generation}")
-            print("Genes:", population[0].genes)
-            print("Fitness:", population[0].fitness)
             return population[0]
 
         new_population = []
