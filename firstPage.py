@@ -67,9 +67,13 @@ class App(tk.Tk):
                 ChessBoard(n, solution)
 
         elif algo == "genetic":
+            if n > 50:
+               return messagebox.showinfo("Result: ", f"The algorithm is very slow for N={n}.")
+                
             solution = genetic_algorithm(n)
             if solution:
                 ChessBoard(n, solution.genes)
+                
             elif solution is None:
                 messagebox.showinfo("Result", f"No solution for N={n}")
                 
