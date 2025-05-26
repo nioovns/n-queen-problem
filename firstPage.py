@@ -76,7 +76,7 @@ class App(tk.Tk):
         else:  
             solver = CSP(n)
             solution = solver.solve()
-            if solution[0] == -1:
+            if solution is None:
                 messagebox.showinfo("Result", f"No solution for N={n}")
             else:
                 ChessBoard(n, solution) 
