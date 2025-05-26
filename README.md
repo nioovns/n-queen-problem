@@ -11,7 +11,7 @@ this project solves the classic N-Queens-Problem using three different methods:
 # Features:
 **Fast and Efficient**  
 - CSP solver provides solutions quickly even for large n.
-- Genetic algorithm works efficiently up to n = 20.
+- The genetic algorithm processes at a slow speed with input values ​​greater than 20. The larger the number we enter, the slower the processing speed. Especially when we enter a number greater than 50, the slower the processing speed.
 **Smart Search**  
 Uses MRV heuristic and forward checking to reduce backtracking.
 **User Interface**  
