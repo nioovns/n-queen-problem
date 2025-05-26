@@ -12,14 +12,11 @@ Features:
     Fast and Efficient:  
     - CSP solver provides solutions quickly even for large n.
     - Genetic algorithm works efficiently up to n = 20.
-
     Smart Search:  
     Uses MRV heuristic and forward checking to reduce backtracking.
-
     User Interface:  
     - Input is handled via a simple Tkinter GUI.  
     - The chessboard visualization is displayed using Matplotlib.
-
     Customizable:  
     - Easily switch between algorithms and change board size.
 
