@@ -8,30 +8,30 @@ this project solves the classic N-Queens-Problem using three different methods:
     3. Genetic algorithm 
 
 
-Features:
-    Fast and Efficient:  
-    - CSP solver provides solutions quickly even for large n.
-    - Genetic algorithm works efficiently up to n = 20.
-    Smart Search:  
-    Uses MRV heuristic and forward checking to reduce backtracking.
-    User Interface:  
-    - Input is handled via a simple Tkinter GUI.  
-    - The chessboard visualization is displayed using Matplotlib.
-    Customizable:  
-    - Easily switch between algorithms and change board size.
+# Features:
+**Fast and Efficient**  
+- CSP solver provides solutions quickly even for large n.
+- Genetic algorithm works efficiently up to n = 20.
+**Smart Search**  
+Uses MRV heuristic and forward checking to reduce backtracking.
+**User Interface**  
+- Input is handled via a simple Tkinter GUI.  
+- The chessboard visualization is displayed using Matplotlib.
+**Customizable**  
+- Easily switch between algorithms and change board size.
 
 
-Requirements:
-    - Python 3.10+
-    - numpy
-    - matplotlib
+# Requirements:
+- Python 3.10+
+- numpy
+- matplotlib
 
-Installation:
-    ```pip install numpy matplotlib```
+# Installation:
+```pip install numpy matplotlib```
 
 
-How to run:
-    run the firstPage.py to open the input window:
-    ```python firstPage.py```
-    choose the algorithm and enter N (the number of queens).
-    the solution will be shown.
+# How to Run:
+run the firstPage.py to open the input window:
+```python firstPage.py```
+choose the algorithm and enter N (the number of queens).
+the solution will be shown.
